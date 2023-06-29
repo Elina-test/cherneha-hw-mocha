@@ -85,8 +85,8 @@ describe('Assertions for the toaster settings',() =>{
             cy.get(testData.position).click()
             cy.get('nb-card-body button.select-button').eq(1).click()
             cy.get(testData.type).click()
-            cy.get('input[name="title"]').type(testData.title)
-            cy.get('input[name="content"]').type(testData.content)
+            cy.get('input[name="title"]').clear().type(testData.title)
+            cy.get('input[name="content"]').clear().type(testData.content)
             cy.get('input[name="timeout"]').clear().type(testData.time)
             cy.get('nb-card-footer button').eq(0).click()
 
